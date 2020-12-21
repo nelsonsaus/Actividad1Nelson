@@ -1,0 +1,165 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+
+  /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+
+
+  /* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+
+
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+
+/*Aspecto especifico*/
+  /* classe .container - fuente, color, 80% ancho y centrado*/
+
+
+  /*color de la letra específico*/
+
+  /*La cabecera*/
+
+
+.container{
+  color: #1f5091;
+  width: 80%;
+  margin: 50px auto;
+}  
+
+header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2{
+  color:#ebd831;
+}
+
+/* El contenedor flex para la primera fila de contenido .content_wrapper. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+  /* El menú */
+
+  /* El elemento principal main*/
+
+  /* Artículo. Imágenes pequeñas */
+
+.content_wrapper{
+  margin-top: 20px;
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  justify-content: flex-start;
+  
+}
+
+nav{
+  margin-left:0px;
+  margin-right:30px;
+  width: 10%;
+  padding:15px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  padding: 10px 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+main{
+  width: 50%;
+  margin-right:30px;
+  height: 100%;
+}
+
+main figure, .content_wrapper article figure{
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px 0px;
+  height: 100%;
+}
+
+main figure img{
+  width: 80%;
+  border-radius: 15px;
+}
+
+.content_wrapper{
+  height:500px;
+}
+
+.content_wrapper article{
+  width: 35%;
+  height: 100%;
+}
+
+
+.content_wrapper article figure img{
+  width: 80%;
+  margin-bottom: 50px;
+  height:300px;
+  border-radius: 15px;
+}
+
+/* El contenedor flex para la segunda fila de contenido .articles. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+
+.articles{
+  margin-top: 20px;
+  display:flex;
+  width:70%;
+  width:100%;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.articles article{
+  width: 29.3%;
+}
+
+.articles figure{
+  
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px 0px;
+  height: 100%;
+  
+}
+
+.articles figure img{
+  width: 80%;
+  margin-bottom: 50px;
+  height:300px;
+  border-radius: 15px;
+}
+
+/* Pie de la página */
+/* El contenedor flex para la tercera fila de contenido footer. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+
+footer{
+  margin-top:20px;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+footer p:last-child{
+  color:red;
+}

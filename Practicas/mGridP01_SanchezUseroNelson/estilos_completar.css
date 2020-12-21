@@ -1,0 +1,181 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+
+  /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+
+
+  /* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+
+
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+
+/*Aspecto especifico*/
+  /* classe .container - fuente, color, 80% ancho y centrado*/
+
+
+  /*color de la letra específico*/
+
+  /*La cabecera*/
+
+
+.container{
+    color: #1f5091;
+    width:80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 25%);
+    grid-template-rows: [uno] 100px [dos] 500px [tres] 450px [cuatro] 100px;
+    grid-gap:30px;
+
+}  
+
+
+
+
+header{
+  text-align: center;
+  margin-bottom: 20px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-bottom: 3px solid lightgray;
+}
+
+h2{
+  color:#ebd831;
+}
+
+
+
+
+
+nav{
+  margin-left:0px;
+  width: 10%;
+  padding:30px;
+  padding-left:40px;
+  grid-column-start: 1;
+  grid-row-start: dos;
+  grid-row-end: tres;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  padding: 10px 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+main{
+  height: 100%;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: dos;
+  grid-row-end: tres;
+}
+
+main figure, article:first-of-type figure{
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px 0px;
+  height: 100%;
+  grid-row-start: dos;
+  grid-row-end: tres;
+  
+}
+
+main figure img{
+  width: 80%;
+  border-radius: 15px;
+}
+
+
+
+
+
+article:first-of-type{
+    margin:0px;
+    grid-row-start: dos;
+    grid-row-end: tres;
+    grid-column-start: 4;
+    width:100%;
+}
+
+article{
+    margin-top: 30px;
+    grid-row-start: tres;
+    grid-row-end: cuatro;
+}
+
+article:nth-of-type(2){
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+article:nth-of-type(3){
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+article:nth-of-type(4){
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+article figure{
+  
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px 0px;
+  height: 100%;
+  grid-row-start: tres;
+  grid-row-end: cuatro;
+  
+}
+
+article figure img{
+  width: 80%;
+  margin-bottom: 50px;
+  height:300px;
+  border-radius: 15px;
+}
+
+
+
+footer{
+  display:grid;
+  margin-top: 30px;
+  grid-template-columns: 25% 65% 10%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  align-content: center;
+  border-top: 3px solid lightgray;
+}
+
+footer address{
+    grid-row-start: uno;
+
+}
+
+footer .copyright{
+    grid-row-start: uno;
+}
+
+footer div{
+    grid-row-start: uno;
+}
